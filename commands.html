@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Commands — DEV BOT</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+</head>
+
+
+<body>
+
+
+<header class="navbar">
+
+    <div class="nav-container">
+
+        <a href="/" class="logo">
+
+            <span class="logo-box">
+                D
+            </span>
+
+            <span>
+                DEV BOT
+            </span>
+
+        </a>
+
+
+        <nav class="nav-links">
+
+            <a href="/">
+                Home
+            </a>
+
+            <a href="docs.html">
+                Docs
+            </a>
+
+            <a href="tos.html">
+                Terms
+            </a>
+
+        </nav>
+
+
+        <a href="#" class="discord-button">
+            DEV TESTER ↗
+        </a>
+
+    </div>
+
+</header>
+
+
+<header class="page-header">
+
+    <p class="eyebrow">
+        COMMAND REFERENCE
+    </p>
+
+    <h1>
+        Commands
+    </h1>
+
+    <p>
+        Everything DEV BOT can currently do.
+    </p>
+
+</header>
+
+
+<main class="command-layout">
+
+
+    <!-- GENERAL -->
+
+    <section class="command-category">
+
+        <h2>
+            General
+        </h2>
+
+
+        <div class="command-card">
+
+            <h3>
+                /help
+            </h3>
+
+            <p>
+                Displays the available DEV BOT commands.
+            </p>
+
+            <code class="command-usage">
+                /help
+            </code>
+
+        </div>
+
+
+        <div class="command-card">
+
+            <h3>
+                /ping
+            </h3>
+
+            <p>
+                Checks the bot's response time.
+            </p>
+
+            <code class="command-usage">
+                /ping
+            </code>
+
+        </div>
+
+
+        <div class="command-card">
+
+            <h3>
+                /botinfo
+            </h3>
+
+            <p>
+                Displays information about DEV BOT.
+            </p>
+
+            <code class="command-usage">
+                /botinfo
+            </code>
+
+        </div>
+
+    </section>
+
+
+    <!-- MODERATION -->
+
+    <section class="command-category">
+
+        <h2>
+            Moderation
+        </h2>
+
+
+        <div class="command-card">
+
+            <h3>
+                /warn
+            </h3>
+
+            <p>
+                Warns a member of the server.
+            </p>
+
+            <code class="command-usage">
+                /warn &lt;user&gt; &lt;reason&gt;
+            </code>
+
+            <span class="command-permission">
+                Required permission: Moderator
+            </span>
+
+        </div>
+
+
+        <div class="command-card">
+
+            <h3>
+                /timeout
+            </h3>
+
+            <p>
+                Temporarily prevents a member from communicating.
+            </p>
+
+            <code class="command-usage">
+                /timeout &lt;user&gt; &lt;duration&gt; &lt;reason&gt;
+            </code>
+
+            <span class="command-permission">
+                Required permission: Moderator
+            </span>
+
+        </div>
+
+
+        <div class="command-card">
+
+            <h3>
+                /kick
+            </h3>
+
+            <p>
+                Removes a member from the server.
+            </p>
+
+            <code class="command-usage">
+                /kick &lt;user&gt; &lt;reason&gt;
+            </code>
+
+            <span class="command-permission">
+                Required permission: Moderator
+            </span>
+
+        </div>
+
+
+        <div class="command-card">
+
+            <h3>
+                /ban
+            </h3>
+
+            <p>
+                Bans a member from the server.
+            </p>
+
+            <code class="command-usage">
+                /ban &lt;user&gt; &lt;reason&gt;
+            </code>
+
+            <span class="command-permission">
+                Required permission: Moderator
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- TESTING -->
+
+    <section class="command-category">
+
+        <h2>
+            Testing
+        </h2>
+
+
+        <div class="command-card">
+
+            <h3>
+                /test
+            </h3>
+
+            <p>
+                Provides testing-related functionality.
+            </p>
+
+            <code class="command-usage">
+                /test
+            </code>
+
+            <span class="command-permission">
+                Required role: Tester
+            </span>
+
+        </div>
+
+
+        <div class="command-card">
+
+            <h3>
+                /bug
+            </h3>
+
+            <p>
+                Creates a bug report.
+            </p>
+
+            <code class="command-usage">
+                /bug &lt;description&gt;
+            </code>
+
+            <span class="command-permission">
+                Required role: Tester
+            </span>
+
+        </div>
+
+
+        <div class="command-card">
+
+            <h3>
+                /teststatus
+            </h3>
+
+            <p>
+                Displays the current testing status.
+            </p>
+
+            <code class="command-usage">
+                /teststatus
+            </code>
+
+        </div>
+
+    </section>
+
+
+    <!-- DEVELOPER -->
+
+    <section class="command-category">
+
+        <h2>
+            Developer
+        </h2>
+
+
+        <div class="command-card">
+
+            <h3>
+                /dev
+            </h3>
+
+            <p>
+                Provides developer-only tools.
+            </p>
+
+            <code class="command-usage">
+                /dev
+            </code>
+
+            <span class="command-permission">
+                Required role: Developer
+            </span>
+
+        </div>
+
+
+        <div class="command-card">
+
+            <h3>
+                /devstatus
+            </h3>
+
+            <p>
+                Displays the current development status.
+            </p>
+
+            <code class="command-usage">
+                /devstatus
+            </code>
+
+            <span class="command-permission">
+                Required role: Developer
+            </span>
+
+        </div>
+
+    </section>
+
+
+    <!-- UTILITY -->
+
+    <section class="command-category">
+
+        <h2>
+            Utility
+        </h2>
+
+
+        <div class="command-card">
+
+            <h3>
+                /userinfo
+            </h3>
+
+            <p>
+                Displays information about a Discord user.
+            </p>
+
+            <code class="command-usage">
+                /userinfo &lt;user&gt;
+            </code>
+
+        </div>
+
+
+        <div class="command-card">
+
+            <h3>
+                /avatar
+            </h3>
+
+            <p>
+                Displays a user's Discord avatar.
+            </p>
+
+            <code class="command-usage">
+                /avatar &lt;user&gt;
+            </code>
+
+        </div>
+
+
+        <div class="command-card">
+
+            <h3>
+                /serverinfo
+            </h3>
+
+            <p>
+                Displays general information about the server.
+            </p>
+
+            <code class="command-usage">
+                /serverinfo
+            </code>
+
+        </div>
+
+    </section>
+
+
+    <div class="notice">
+
+        Command availability may change as DEV BOT is updated.
+        Some commands shown here may not yet be available.
+
+    </div>
+
+
+</main>
+
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <a href="/" class="logo">
+
+                <span class="logo-box">
+                    D
+                </span>
+
+                <span>
+                    DEV BOT
+                </span>
+
+            </a>
+
+            <p>
+                Powered by DEV TESTER.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © 2026 DEV TESTER
+        </span>
+
+        <span>
+            DEV BOT is not affiliated with Roblox Corporation.
+        </span>
+
+    </div>
+
+</footer>
+
+
+</body>
+
+</html>
